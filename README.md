@@ -70,14 +70,21 @@ SecureBank ATM Terminal bridges a physical bare-metal microcontroller environmen
 
 ## Pin Configuration
 
-| Component | LPC2148 Port/Pin | Description |
-| :--- | :--- | :--- |
-| **LCD Data** | `P0.16 - P0.23` | 8-bit Data Lines (`D0-D7`) |
-| **LCD Control**| `P0.5`, `P0.6`, `P0.4` | Register Select (`RS`), Read/Write (`RW`), Enable (`EN`) |
-| **Keypad Rows**| `P1.16 - P1.19` | GPIO Outputs (Scanned low sequentially) |
-| **Keypad Cols**| `P1.20 - P1.23` | GPIO Inputs (Pulled high, reads low on press) |
-| **EM18 RFID** | `P0.9` | UART1 `RXD` (Interrupt-driven via VIC) |
-| **PC Server** | `P0.0`, `P0.1` | UART0 `TXD` / `RXD` (Polling mode) |
+<details>
+  <summary><b>🔌 Click to expand Hardware Pin Mappings</b></summary>
+  
+  <br>
+
+  | Component | LPC2148 Port/Pin | Description |
+  | :--- | :--- | :--- |
+  | **LCD Data** | `P0.16 - P0.23` | 8-bit Data Lines (`D0-D7`) |
+  | **LCD Control**| `P0.5`, `P0.6`, `P0.4` | Register Select (`RS`), Read/Write (`RW`), Enable (`EN`) |
+  | **Keypad Rows**| `P1.16 - P1.19` | GPIO Outputs (Scanned low sequentially) |
+  | **Keypad Cols**| `P1.20 - P1.23` | GPIO Inputs (Pulled high, reads low on press) |
+  | **EM18 RFID** | `P0.9` | UART1 `RXD` (Interrupt-driven via VIC) |
+  | **PC Server** | `P0.0`, `P0.1` | UART0 `TXD` / `RXD` (Polling mode) |
+
+</details>
 
 ---
 
@@ -90,9 +97,10 @@ The LPC2148 firmware operates on a strict FSM:
 3. `STATE_MENU`: Renders a 2-page UI, captures transaction requests, and routes responses.
 
 ### UART Communication Protocol
-The MCU and PC communicate via a custom request/reply string protocol, terminated by `$`.
-* **MCU Request Format:** `#TXN:WITHDRAW#AMOUNT:500$`
-* **PC Reply Format:** `@OK#BALANCE:4500.00$` or `@ERR#INSUFFICIENT_BALANCE$`
+The MCU and PC communicate via a custom asynchronous request/reply string protocol, strictly terminated by `$`.
+
+> **MCU Transmit Format:** `#TXN:WITHDRAW#AMOUNT:500$`  
+> **Server Reply Format:** `@OK#BALANCE:4500.00$` _or_ `@ERR#INSUFFICIENT_BALANCE$`
 
 ---
 
