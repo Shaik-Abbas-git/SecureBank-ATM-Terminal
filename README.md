@@ -14,6 +14,9 @@ This project demonstrates hardware-software co-design, asynchronous UART communi
 - [Pin Configuration](#pin-configuration)
 - [System Architecture & Protocol](#system-architecture--protocol)
 - [Repository Structure](#repository-structure)
+- [Build & Execution Instructions](#build--execution-instructions)
+- [Output Gallery](#output-gallery)
+- [Future Enhancements](#future-enhancements)
 
 ---
 
