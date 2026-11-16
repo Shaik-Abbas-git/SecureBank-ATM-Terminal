@@ -25,12 +25,14 @@ SecureBank ATM Terminal bridges a physical bare-metal microcontroller environmen
 
 ---
 
-## System Workflow & Block Diagram
+## Block Diagram & System Workflow:
 
-<!-- TODO: Replace the placeholder links below with your actual GitHub image links once you create the diagrams -->
-![Block Diagram](https://via.placeholder.com/800x400.png?text=System+Block+Diagram+-+Upload+Image+Here)
+**1. Block Diagram:**
+<img width="1672" height="941" alt="block-diagram (2)" src="https://github.com/user-attachments/assets/d42935b5-c664-4a4f-9f59-7b1986dcdfe2" />
 
-![Workflow Flowchart](https://via.placeholder.com/800x400.png?text=FSM+Workflow+Flowchart+-+Upload+Image+Here)
+**2. System Workflow:**
+<img width="1536" height="1024" alt="flowchart" src="https://github.com/user-attachments/assets/aee8f0dc-63b8-411f-aa21-d9bf4863fa6e" />
+
 
 ---
 
@@ -140,13 +142,16 @@ SecureBank-ATM-Terminal/
 
 <!-- TODO: Replace the placeholder links below with your actual hardware output images -->
 **1. Authentication Phase:**
-![Auth Screen](https://via.placeholder.com/400x200.png?text=LCD+Auth+Screen)
+<img width="1672" height="941" alt="auth-screen" src="https://github.com/user-attachments/assets/2a821b09-7473-4553-8bd7-2b8ccf9373cc" />
+
 
 **2. Main Menu Interface:**
-![Menu Screen](https://via.placeholder.com/400x200.png?text=LCD+Menu+Screen)
+<img width="1672" height="941" alt="Main_menu" src="https://github.com/user-attachments/assets/b77cf57f-5291-41c0-9d99-88df581517fd" />
+
 
 **3. Transaction Success:**
-![Transaction](https://via.placeholder.com/400x200.png?text=LCD+Transaction+Screen)
+<img width="1672" height="941" alt="Transaction" src="https://github.com/user-attachments/assets/65d339e5-70b5-427e-97a2-ed52de8be5b2" />
+
 
 ---
 
