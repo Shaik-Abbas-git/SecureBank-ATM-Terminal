@@ -1,4 +1,10 @@
 # SecureBank ATM Terminal 🏦
+<p align="center">
+  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/ARM-0091BD?style=for-the-badge&logo=arm&logoColor=white" />
+  <img src="https://img.shields.io/badge/GCC-A3D900?style=for-the-badge&logo=gnu&logoColor=black" />
+</p>
 
 An industrial-grade embedded ATM terminal simulation featuring a bare-metal Finite State Machine on the NXP LPC2148 (ARM7TDMI-S) and a Linux-based C daemon for secure, real-time transaction processing. 
 
